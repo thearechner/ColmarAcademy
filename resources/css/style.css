@@ -71,7 +71,7 @@ a:hover {
   }
   .container {
   flex-direction: column;
-}
+  }
 }
 
 /* Header */
@@ -114,6 +114,7 @@ footer ul {
 nav {
   padding: 0.75rem 1.5rem;
 }
+
 nav li {
   padding-left: 1rem;
 }
@@ -163,6 +164,7 @@ nav li {
 .banner h1 {
   padding: 0 1.5rem 1rem 0;
 }
+
 .banner p {
   padding: 0 1.5rem 1rem 0;
   font-size: 1.2rem;
@@ -297,17 +299,14 @@ nav li {
     width: 100%;
     padding: 0;
   }
-
   .feature img {
     width: 100%;
     height: auto;
   }
-
   .feature-info {
     width: 90%;
     padding: 1rem;
   }
-
 }
 
 /* Courses */
@@ -350,11 +349,11 @@ nav li {
   width: 100%;
   height: auto;
 }
+
 .text {
   min-height: 7rem;
   padding: 1rem;
 }
-
 
 /* Courses mobile */
 
@@ -394,7 +393,6 @@ nav li {
 .column1 video {
   width: 100%;
   height: auto;
-  padding: 1rem 0;
 }
 
 /* Exhibit mobile */
@@ -402,6 +400,9 @@ nav li {
 @media only screen and (max-width: 633px) {
   .column1 {
     width: 100%;
+    padding: 1rem 0;
+  }
+  .column1 video {
     padding: 1rem 0;
   }
 }
