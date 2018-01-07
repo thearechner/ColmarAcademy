@@ -14,7 +14,7 @@
     <!-- Header -->
     <header>
 
-      <div class="header container">
+      <div class="header container desktop">
         <div class="logo desktop">
           <img src="resources/assets/images/ic-logo.svg" alt="Logo">
           <div class="uppercase"><span class="bold">Colmar</span><span
@@ -31,13 +31,17 @@
           </ul>
         </nav>
 
-        <nav class="mobile">
-          <img src="resources/assets/images/ic-logo.svg" alt="Logo">
-          <img src="resources/assets/images/ic-campus.svg" alt="Our campus">
-          <img src="resources/assets/images/ic-online.svg" alt="Online">
-          <img src="resources/assets/images/ic-login.svg" alt="Sign in">
-        </nav>
       </div>
+
+      <!-- Navigation Mobile -->
+      <nav class="mobile">
+        <ul>
+          <li><img src="resources/assets/images/ic-logo.svg" alt="Logo"></li>
+          <li><img src="resources/assets/images/ic-on-campus.svg" alt="Our campus"></li>
+          <li><img src="resources/assets/images/ic-online.svg" alt="Online"></li>
+          <li><img src="resources/assets/images/ic-login.svg" alt="Sign in"></li>
+        </ul>
+      </nav>
 
     </header>
 
@@ -64,6 +68,7 @@
       <!-- Information -->
       <section class="info">
         <div class="container">
+          
           <!-- Left Column -->
           <div class="column1 desktop">
             <img src="resources/assets/images/information-main.jpg" alt="Main Campus">
@@ -151,7 +156,7 @@
               </div>
             </div>
 
-            <div class="course">
+            <div class="course desktop">
               <img src="resources/assets/images/course-computer-art.jpg"
               alt="Computer Art">
               <div class="text">
@@ -161,7 +166,7 @@
               </div>
             </div>
 
-            <div class="course">
+            <div class="course desktop">
               <img src="resources/assets/images/course-design.jpg" alt="Design">
               <div class="text">
                 <h4>Design</h4>
@@ -170,7 +175,7 @@
               </div>
             </div>
 
-            <div class="course">
+            <div class="course desktop">
               <img src="resources/assets/images/course-data.jpg" alt="Data">
               <div class="text">
                 <h4>Data</h4>
@@ -179,7 +184,7 @@
               </div>
             </div>
 
-            <div class="course">
+            <div class="course desktop">
               <img src="resources/assets/images/course-business.jpg" alt="Business">
               <div class="text">
                 <h4>Business</h4>
@@ -188,7 +193,7 @@
               </div>
             </div>
 
-            <div class="course">
+            <div class="course desktop">
               <img src="resources/assets/images/course-marketing.jpg" alt="Marketing">
               <div class="text">
                 <h4>Marketing</h4>
@@ -197,22 +202,21 @@
               </div>
             </div>
           </div>
-          <!--</div>-->
 
-
+          <!-- Courses Mobile -->
+          <div class="course-list mobile">
+            <ul>
+              <li><a href="#">Software Engineering</a></li>
+              <li><a href="#">Computer Art</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Data</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Marketing</a></li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Courses Mobile -->
-        <div class="course-list mobile">
-          <ul>
-            <li><a href="#">Software Engineering</a></li>
-            <li><a href="#">Computer Art</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Data</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Marketing</a></li>
-          </ul>
-        </div>
+
 
       </section>
 
@@ -221,6 +225,8 @@
         <div class="container">
           <h2>Thesis Exhibit</h2>
           <div class="wrapper">
+
+            <!-- Left Column -->
             <div class="column1">
               <video src="resources/assets/videos/thesis.mp4" autoplay loop
               poster="posterimage.jpg">
@@ -234,6 +240,7 @@
               </div>
             </div>
 
+            <!-- Right Column -->
             <div class="column2">
 
               <div class="feature desktop">
@@ -266,8 +273,6 @@
 
           </div>
         </div>
-
-
 
       </section>
 

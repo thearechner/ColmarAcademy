@@ -47,6 +47,7 @@ a:visited
 
 a:hover {
   color: hsl(0, 0%, 50%);
+  transition: color 0.3s;
 }
 
 .container {
@@ -70,6 +71,12 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 580px) {
+  .container {
+  flex-direction: column;
+}
+
+}
 /* Header */
 
 header {
@@ -115,6 +122,20 @@ nav li {
 }
 
 /* Header mobile */
+
+@media only screen and (max-width: 580px){
+  .logo {
+    display: none;
+  }
+  nav .mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav li {
+    padding: 0.5rem;
+  }
+}
 
 /* Banner */
 
@@ -162,9 +183,17 @@ nav li {
   align-items: center;
 }
 
-/* Banner mobile */
+.button:hover {
+  background-color: hsl(0, 0%, 50%);
+  transition: background-color 0.3s;
+}
 
-/* Tablet */
+.button:active {
+  color: hsl(0, 0%, 70%);
+  transition: color 0.2s;
+}
+
+/* Banner mobile */
 
 @media only screen and (max-width: 768px) {
   .banner h1 {
@@ -176,9 +205,30 @@ nav li {
     line-height: 1.2rem;
   }
 }
-@media only screen and (max-width: 633px) {
+@media only screen and (max-width: 633px, min-width: 581px) {
   .banner p {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  .banner .image-container {
+    width: 100%;
+    padding: 0;
+  }
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  .banner .banner-text {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .banner h1,
+  .banner p,
+  .button {
+    width: auto;
+    margin: 0 1rem;
   }
 }
 
@@ -229,6 +279,11 @@ nav li {
 
 .feature-info a {
   color: hsl(195, 100%, 40%);
+}
+
+.feature:hover {
+  background-color: hsl(0, 0%, 80%);
+  transition: background-color 0.5s;
 }
 /* Information mobile */
 
