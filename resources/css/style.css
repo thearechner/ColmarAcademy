@@ -1,4 +1,5 @@
 /* Universal Styles */
+
 html {
   font-size: 16px;
 }
@@ -52,6 +53,7 @@ a:visited
 }
 
 /* Basic Media Queries */
+
 @media only screen and (min-width: 581px) {
   .mobile {
     display: none;
@@ -69,7 +71,7 @@ a:visited
 header {
   background-color: hsl(0, 0%, 100%);
   width: 100%;
-  height: 4rem;
+  /*height: 4rem;*/
   position: fixed;
   z-index: 5;
 }
@@ -110,6 +112,7 @@ nav li {
 /* Header mobile */
 
 /* Banner */
+
 .banner {
   background-color: hsl(0, 0%, 80%);
   padding-top: 4rem;
@@ -165,8 +168,8 @@ nav li {
     line-height: 2.6rem;
   }
 }
-/* Information */
 
+/* Information */
 
 .column1 {
   width: 60%;
@@ -215,11 +218,55 @@ nav li {
   padding-right: 1rem;
 }
 
+.feature-info a {
+  color: hsl(195, 100%, 40%);
+}
 /* Information mobile */
+
 /* Courses */
+
 .courses {
   background-color: hsl(0, 0%, 90%);
 }
+
+.courses .container {
+  align-items: center;
+  flex-direction: column;
+}
+
+.courses h2 {
+  padding-top: 2rem;
+}
+
+.course-grid {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.course {
+  background-color: hsl(0, 0%, 100%);
+  width: 29%;
+  height: auto;
+  margin: 1rem;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+.text {
+  padding: 1rem;
+}
+
+
 /* Courses mobile */
 /* Exhibit */
 /* Exhibit mobile */
