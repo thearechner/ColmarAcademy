@@ -59,19 +59,16 @@ a:hover {
 
 /* Basic Media Queries */
 
-@media only screen and (min-width: 581px) {
+@media only screen and (min-width: 634px) {
   .mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 633px){
   .desktop {
     display: none;
   }
-}
-
-@media only screen and (max-width: 580px) {
   .container {
   flex-direction: column;
 }
@@ -123,7 +120,7 @@ nav li {
 
 /* Header mobile */
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 633px){
   .logo {
     display: none;
   }
@@ -205,13 +202,8 @@ nav li {
     line-height: 1.2rem;
   }
 }
-@media only screen and (max-width: 633px, min-width: 581px) {
-  .banner p {
-    display: none;
-  }
-}
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 633px){
   .banner .image-container {
     width: 100%;
     padding: 0;
@@ -288,7 +280,7 @@ nav li {
 
 /* Information mobile */
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 633px) {
   .column2 {
     width: 100%;
     padding: 0;
@@ -366,7 +358,11 @@ nav li {
 
 /* Courses mobile */
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 633px) {
+  .courses {
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 90%);
+  }
   .course-grid {
     display: none;
   }
@@ -386,9 +382,8 @@ nav li {
   .course-list a {
     padding: 1rem;
   }
-
-
 }
+
 /* Exhibit */
 
 .exhibit .wrapper {
@@ -399,13 +394,15 @@ nav li {
 .column1 video {
   width: 100%;
   height: auto;
+  padding: 1rem 0;
 }
 
 /* Exhibit mobile */
 
-@media only screen and (max-width: 580px) {
-  .exhibit .wrapper {
-    flex-direction: column;
+@media only screen and (max-width: 633px) {
+  .column1 {
+    width: 100%;
+    padding: 1rem 0;
   }
 }
 
@@ -426,3 +423,9 @@ footer li {
 
 
 /* Footer mobile */
+
+@media only screen and (max-width: 633px) {
+  footer {
+    border: none;
+  }
+}
