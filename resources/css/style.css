@@ -14,12 +14,12 @@ body {
 h1 {
   font-weight: 700;
   font-size: 2.5rem;
-  /*line-height: 3rem;*/
 }
 
 h2 {
   font-weight: 700;
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 h4 {
@@ -27,7 +27,8 @@ h4 {
   font-size: 1.2rem;
 }
 
-p {
+p,
+footer li {
   font-size: 0.85rem;
   font-weight: 300;
   line-height: 1.2rem;
@@ -38,11 +39,14 @@ p {
 }
 
 a:link,
-a:hover,
 a:visited
 {
   text-decoration: none;
   color: hsl(0, 0%, 25%);
+}
+
+a:hover {
+  color: hsl(0, 0%, 50%);
 }
 
 .container {
@@ -71,13 +75,14 @@ a:visited
 header {
   background-color: hsl(0, 0%, 100%);
   width: 100%;
-  /*height: 4rem;*/
   position: fixed;
   z-index: 5;
 }
 
 .header,
-nav ul {
+nav ul,
+footer .container,
+footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -135,10 +140,13 @@ nav li {
 .banner .banner-text {
   width: 40%;
   height: auto;
-  /*padding: 1.5rem;*/
+}
+
+.banner h1 {
+  padding: 0 1.5rem 1rem 0;
 }
 .banner p {
-  padding: 1rem 0;
+  padding: 0 1.5rem 1rem 0;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -159,13 +167,18 @@ nav li {
 /* Tablet */
 
 @media only screen and (max-width: 768px) {
-  .banner p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
   .banner h1 {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .banner p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+@media only screen and (max-width: 633px) {
+  .banner p {
+    display: none;
   }
 }
 
@@ -179,10 +192,6 @@ nav li {
 .column1 img {
   width: 100%;
   height: auto;
-}
-
-.column1 .quote {
-  padding-top: 1.5rem;
 }
 
 .attribution {
@@ -229,7 +238,8 @@ nav li {
   background-color: hsl(0, 0%, 90%);
 }
 
-.courses .container {
+.courses .container,
+.exhibit .container {
   align-items: center;
   flex-direction: column;
 }
@@ -255,7 +265,7 @@ nav li {
   background-color: hsl(0, 0%, 100%);
   width: 29%;
   height: auto;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .course img {
@@ -263,12 +273,41 @@ nav li {
   height: auto;
 }
 .text {
+  min-height: 7rem;
   padding: 1rem;
 }
 
 
 /* Courses mobile */
+
+
 /* Exhibit */
+
+.exhibit .wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.column1 video {
+  width: 100%;
+  height: auto;
+}
+
 /* Exhibit mobile */
 /* Footer */
+
+footer {
+  border-top: 1px solid hsl(0, 0%, 90%);
+
+}
+footer p,
+footer ul {
+  padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+footer li {
+  padding-right: 1rem;
+}
+
+
 /* Footer mobile */
