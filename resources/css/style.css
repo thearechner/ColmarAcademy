@@ -7,11 +7,13 @@ body {
   font-family: "Open-Sans", sans-serif;
   font-weight: 300;
   color: hsl(0, 0%, 25%);
+  background-color: hsl(0, 0%, 95%);
 }
 
 h1 {
   font-weight: 700;
   font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 h2 {
@@ -43,12 +45,13 @@ a:visited
 }
 
 /* Basic Media Queries */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 581px) {
   .mobile {
     display: none;
   }
 }
-@media only screen and (max-width: 480px){
+
+@media only screen and (max-width: 580px){
   .desktop {
     display: none;
   }
@@ -60,7 +63,6 @@ header {
   background-color: hsl(0, 0%, 100%);
   width: 100%;
   height: 4rem;
-  /*margin: 0;*/
   position: fixed;
   z-index: 5;
 }
@@ -101,10 +103,47 @@ nav li {
 /* Header mobile */
 
 /* Banner */
+.banner {
+  background-color: hsl(0, 0%, 80%);
+  position: relative;
+  top: 4rem;
+}
+
+.banner .container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+  padding: 1rem 1.5rem;
+}
+
+.banner p {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 25%);
+  /*font-weight: 400;*/
+  width: 90%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Banner mobile */
 /* Information */
 /* Information mobile */
 /* Courses */
+.courses {
+  background-color: hsl(0, 0%, 90%);
+}
 /* Courses mobile */
 /* Exhibit */
 /* Exhibit mobile */
