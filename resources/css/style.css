@@ -75,8 +75,8 @@ a:hover {
   .container {
   flex-direction: column;
 }
-
 }
+
 /* Header */
 
 header {
@@ -285,7 +285,38 @@ nav li {
   background-color: hsl(0, 0%, 80%);
   transition: background-color 0.5s;
 }
+
 /* Information mobile */
+
+@media only screen and (max-width: 580px) {
+  .column2 {
+    width: 100%;
+    padding: 0;
+  }
+  .feature {
+    border: none;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+
+  .feature-info {
+    width: 90%;
+    padding: 1rem;
+  }
+
+}
 
 /* Courses */
 
@@ -335,7 +366,29 @@ nav li {
 
 /* Courses mobile */
 
+@media only screen and (max-width: 580px) {
+  .course-grid {
+    display: none;
+  }
+  .course-list {
+    width: 100%;
+  }
+  .course-list ul {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .course-list li {
+    background-color: hsl(0, 0%, 80%);
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+  }
+  .course-list a {
+    padding: 1rem;
+  }
 
+
+}
 /* Exhibit */
 
 .exhibit .wrapper {
@@ -349,12 +402,19 @@ nav li {
 }
 
 /* Exhibit mobile */
+
+@media only screen and (max-width: 580px) {
+  .exhibit .wrapper {
+    flex-direction: column;
+  }
+}
+
 /* Footer */
 
 footer {
   border-top: 1px solid hsl(0, 0%, 90%);
-
 }
+
 footer p,
 footer ul {
   padding: 1rem 1.5rem 3rem 1.5rem;
