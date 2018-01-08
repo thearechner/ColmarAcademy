@@ -44,6 +44,10 @@ footer li {
   padding-top: 0.5rem;
 }
 
+/*nav li {
+  font-weight: 400;
+}*/
+
 .banner p {
   font-size: 1.5rem;
   font-weight: 400;
@@ -75,7 +79,7 @@ a:visited {
 }
 
 a:hover {
-  color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 70%);
   transition: color 0.3s;
 }
 
