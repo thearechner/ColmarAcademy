@@ -282,6 +282,11 @@ nav li {
   padding: 1rem;
 }
 
+.course:hover {
+  box-shadow: 0 0 0 1px hsl(0, 0%, 80%);
+  transition: box-shadow 0.2s;
+}
+
 /* Footer */
 footer {
   border-top: 1px solid hsl(0, 0%, 90%);
@@ -348,6 +353,11 @@ footer li {
   }
   nav li {
     padding: 0.5rem;
+  }
+  nav img:hover {
+    width: 105%;
+    height: auto;
+    transition: all 0.2s;
   }
 
   /* Banner */
